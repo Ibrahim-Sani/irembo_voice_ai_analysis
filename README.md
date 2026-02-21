@@ -240,7 +240,10 @@ This project was developed using PostgreSQL (Supabase).
      
 4. Run fact model:
 
-   * fact_voice_ai_sessions.sql
+
+* fact_voice_ai_sessions.sql
+
+  
 5. Run analysis queries inside the `analysis/` folder
 
 
