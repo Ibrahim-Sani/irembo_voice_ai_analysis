@@ -6,11 +6,12 @@ This project evaluates whether Voice AI improves accessibility, efficiency, and 
 
 The project includes:
 
-- Data modeling (fact + staging)
-- Behavioral analysis queries
-- Friction simulation
-- Success uplift projections
-- Executive-ready analytical outputs
+
+* Data modeling (fact + staging)
+* Behavioral analysis queries
+* Friction simulation
+* Success uplift projections
+* Executive-ready analytical outputs
 
 
 
@@ -210,13 +211,14 @@ analytics.fact_voice_ai_sessions
 
 This fact table integrates:
 
-- Voice session data
-- User attributes
-- AI performance metrics
-- Application outcomes
-- Turn-level aggregations
+* Voice session data
+* User attributes
+* AI performance metrics
+* Application outcomes
+* Turn-level aggregations
 
----
+
+
 
 # How To Run The Code
 
@@ -228,17 +230,19 @@ This project was developed using PostgreSQL (Supabase).
 2. Open SQL Editor
 3. Run staging scripts first:
 
-   - stg_voice_sessions.sql
-   - stg_users.sql
-   - stg_turn_agg.sql
-   - stg_voice_ai_metrics.sql
-   - stg_applications.sql
+   * stg_voice_sessions.sql
+   * stg_users.sql
+   * stg_turn_agg.sql
+   * stg_voice_ai_metrics.sql
+   * stg_applications.sql
+  
+     
 4. Run fact model:
 
    - fact_voice_ai_sessions.sql
 5. Run analysis queries inside the `analysis/` folder
 
----
+
 
 ## Assumptions
 
