@@ -267,7 +267,8 @@ SQL modeling
 
 Friction simulation modeling
 
-Author
+Author:
+
 Ibrahim Sani
 Data Analytics Engineer, Consultant  – Irembo Voice AI
 
