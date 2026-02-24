@@ -6,19 +6,11 @@ This project evaluates whether Voice AI improves accessibility, efficiency, and 
 
 The project includes:
 
-
 * Data modeling (fact + staging)
 * Behavioral analysis queries
 * Friction simulation
 * Success uplift projections
 * Executive-ready analytical outputs
-
-
-
-
-
-
-
 
 ```mermaid
 
@@ -202,7 +194,6 @@ flowchart TD
   classDef doc fill:#E1F5FE,stroke:#0277BD,stroke-width:2px,color:#01579B
 ```
 
-
 # Data Model
 
 Primary fact table:
@@ -217,7 +208,33 @@ This fact table integrates:
 * Application outcomes
 * Turn-level aggregations
 
+# 📂 Repository Structure
 
+```text
+.
+├── README.md
+├── analysis/
+│   ├── 01_basic_health_check.sql
+│   ├── 02_completion_by_channel.sql
+│   ├── 03_first_time_vs_others.sql
+│   ├── 04_high_vs_low_misunderstanding.sql
+│   ├── 05_time_to_submit_by_channel.sql
+│   ├── 06_friction_efficiency_impact.sql
+│   ├── 07_friction_severity_index.sql
+│   └── 08_error_reduction_simulation.sql
+├── metabase_report/
+│   ├── Irembo_VoiceAi_Dashboard.pdf
+│   ├── Irembo_VoiceAi_Dashboard.png
+│   └── Irembo_VoiceAi_Report.pdf
+└── models/
+    ├── fact_voice_ai_sessions.sql
+    ├── stg_applications.sql
+    ├── stg_applications_dedup.sql
+    ├── stg_turn_agg.sql
+    ├── stg_users.sql
+    ├── stg_voice_ai_metrics.sql
+    └── stg_voice_sessions.sql
+```
 
 
 # How To Run The Code
@@ -230,23 +247,17 @@ This project was developed using PostgreSQL (Supabase).
 2. Open SQL Editor
 3. Run staging scripts first:
 
-
 * stg_voice_sessions.sql
-*  stg_users.sql
-*   stg_turn_agg.sql
-*  stg_voice_ai_metrics.sql
-*  stg_applications.sql
-  
-     
-4. Run fact model:
+* stg_users.sql
+* stg_turn_agg.sql
+* stg_voice_ai_metrics.sql
+* stg_applications.sql
 
+4. Run fact model:
 
 * fact_voice_ai_sessions.sql
 
-  
 5. Run analysis queries inside the `analysis/` folder
-
-
 
 ## Assumptions
 
@@ -271,6 +282,3 @@ Author:
 
 Ibrahim Sani
 Data Analytics Engineer, Consultant  – Irembo Voice AI
-
-
-
